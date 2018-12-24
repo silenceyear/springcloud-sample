@@ -18,6 +18,7 @@
         <module>../springcloud-sample-consul</module>
         <module>../springcloud-sample-eureka</module>
         <module>../springcloud-sample-order</module>
+        <module>../springcloud-sample-config</module>
     </modules>
 
     <name>springcloud-sample-parent</name>

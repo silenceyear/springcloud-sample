@@ -1,0 +1,16 @@
+server:
+  port: 8001
+spring:
+  application:
+    name: ConfigService
+  cloud:
+    consul:
+      host: 127.0.0.1
+      port: 8500
+      discovery:
+        health-check-interval: 15s
+    config:
+      server:
+        git:
+          uri: https://github.com/silenceyear/springcloud-sample.git
+          search-paths: springcloud-sample-config/src/main/resources
