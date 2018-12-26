@@ -13,4 +13,4 @@ spring:
       server:
         git:
           uri: https://github.com/silenceyear/springcloud-sample.git
-          search-paths: springcloud-sample-config/src/main/resources
+          search-paths: configs
