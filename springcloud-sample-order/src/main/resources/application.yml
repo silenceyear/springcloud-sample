@@ -11,5 +11,9 @@ spring:
         health-check-interval: 15s
     config:
       uri: http://loaclhost:8001
+      enabled: true
+      name: ${spring.application.name}
       profile: dev
       label: master
+      username: moranxian@sina.com
+      password: 65535github
