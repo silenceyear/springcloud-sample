@@ -1,8 +1,12 @@
+# 以下配置需放在bootstrap中，因为加载顺序: bootstrap > config配置中心 > application
 server:
   port: 8080
+  address: 192.168.56.42
 spring:
   application:
     name: OrderService
+  profiles:
+    active: dev
   cloud:
     consul:
       host: 127.0.0.1
@@ -15,5 +19,3 @@ spring:
       name: ${spring.application.name}
       profile: dev
       label: master
-      username: moranxian@sina.com
-      password: 65535github

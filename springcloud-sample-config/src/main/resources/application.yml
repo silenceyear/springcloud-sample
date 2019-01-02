@@ -1,5 +1,6 @@
 server:
   port: 8001
+  address: 192.168.56.42
 spring:
   application:
     name: ConfigService
@@ -9,6 +10,8 @@ spring:
       port: 8500
       discovery:
         health-check-interval: 15s
+        prefer-ip-address: true
+        ip-address: 192.168.56.42
     config:
       server:
         git:
