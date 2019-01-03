@@ -5,15 +5,16 @@ spring:
   application:
     name: ConfigService
   cloud:
-    consul:
-      host: 127.0.0.1
-      port: 8500
-      discovery:
-        health-check-interval: 15s
-        prefer-ip-address: true
-        ip-address: 192.168.56.42
+#    consul:
+#      host: 127.0.0.1
+#      port: 8500
+#      discovery:
+#        health-check-interval: 15s
+#        prefer-ip-address: true
+#        ip-address: 192.168.56.42
     config:
       server:
         git:
-          uri: https://github.com/silenceyear/springcloud-sample.git
+          uri: https://github.com/silenceyear/springcloud-sample
           search-paths: configs
+          clone-on-start: true

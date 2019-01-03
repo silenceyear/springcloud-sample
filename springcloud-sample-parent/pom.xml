@@ -19,6 +19,7 @@
         <module>../springcloud-sample-eureka</module>
         <module>../springcloud-sample-order</module>
         <module>../springcloud-sample-config</module>
+        <module>../springcloud-sample-biz/springcloud-sample-hello</module>
     </modules>
 
     <name>springcloud-sample-parent</name>
