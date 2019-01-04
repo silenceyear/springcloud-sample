@@ -1,0 +1,13 @@
+# 以下配置需放在bootstrap中，因为加载顺序: bootstrap > config配置中心 > application
+server:
+  port: 7080
+  address: 192.168.56.42
+spring:
+  profiles:
+    active: dev
+  cloud:
+    consul:
+      host: 192.168.56.42
+      port: 8500
+      discovery:
+        health-check-interval: 15s

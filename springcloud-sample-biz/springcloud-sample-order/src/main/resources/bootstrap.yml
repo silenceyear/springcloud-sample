@@ -1,0 +1,10 @@
+# 以下配置需放在bootstrap中，因为加载顺序: bootstrap > config配置中心 > application
+spring:
+  application:
+    name: OrderService
+  cloud:
+    config:
+      fail-fast: true
+      uri: http://192.168.56.42:8001
+      profile: dev
+      label: master
