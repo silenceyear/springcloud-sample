@@ -15,11 +15,10 @@
         <version>2.0.4.RELEASE</version>
     </parent>
     <modules>
-        <module>../springcloud-sample-consul</module>
         <module>../springcloud-sample-eureka</module>
-        <module>../springcloud-sample-order</module>
         <module>../springcloud-sample-config</module>
         <module>../springcloud-sample-biz/springcloud-sample-hello</module>
+        <module>../springcloud-sample-biz/springcloud-sample-order</module>
     </modules>
 
     <name>springcloud-sample-parent</name>

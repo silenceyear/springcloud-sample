@@ -15,6 +15,6 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/silenceyear/springcloud-sample
+          uri: https://github.com/silenceyear/springcloud-sample.git
           search-paths: configs
-          clone-on-start: true
+#          clone-on-start: true

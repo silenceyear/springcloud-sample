@@ -4,6 +4,7 @@ spring:
     name: HelloService
   cloud:
     config:
+      fail-fast: true
       uri: http://192.168.56.42:8001
 #      name: HelloService
       profile: dev

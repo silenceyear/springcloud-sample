@@ -1,1 +1,0 @@
-hello: hello world application from port ${server.port}
