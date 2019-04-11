@@ -32,9 +32,13 @@ public class OrderApplication {
 
     @Value("${order}")
     private String order;
-
+    @Value("${server.port}")
+    private Integer port;
     @RequestMapping("/getOrders")
     public String getOrders(){
+        /*if (port%2==0) {
+            throw new RuntimeException();
+        }*/
         return order;
     }
 }

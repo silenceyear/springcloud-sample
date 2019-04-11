@@ -17,6 +17,8 @@
     <modules>
         <module>../springcloud-sample-eureka</module>
         <module>../springcloud-sample-config</module>
+        <module>../springcloud-sample-turbine</module>
+        <module>../springcloud-sample-gateway</module>
         <module>../springcloud-sample-biz/springcloud-sample-hello</module>
         <module>../springcloud-sample-biz/springcloud-sample-order</module>
     </modules>

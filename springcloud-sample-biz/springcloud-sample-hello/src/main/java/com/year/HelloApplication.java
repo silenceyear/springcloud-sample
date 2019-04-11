@@ -2,12 +2,12 @@ package com.year;
 
 import com.year.feign.OrderClient;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.cloud.netflix.hystrix.dashboard.EnableHystrixDashboard;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -20,6 +20,8 @@ import java.util.List;
 @EnableAutoConfiguration
 @RestController
 @EnableFeignClients
+//@EnableCircuitBreaker
+@EnableHystrixDashboard
 @ComponentScan
 public class HelloApplication {
 
