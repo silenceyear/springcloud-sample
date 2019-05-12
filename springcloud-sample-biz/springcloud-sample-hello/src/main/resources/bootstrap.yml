@@ -2,10 +2,9 @@
 spring:
   application:
     name: HelloService
-  cloud:
-    config:
-      fail-fast: true
-      uri: http://192.168.56.42:8001
-#      name: HelloService
-      profile: dev
-      label: master
+#  cloud:
+#    config:
+#      fail-fast: true
+#      uri: http://192.168.1.103:8001
+#      profile: dev
+#      label: master

@@ -14,7 +14,6 @@ import java.util.List;
 
 @SpringBootApplication
 @EnableDiscoveryClient
-@EnableAutoConfiguration
 @RestController
 public class OrderApplication {
 

@@ -1,16 +1,21 @@
 # 以下配置需放在bootstrap中，因为加载顺序: bootstrap > config配置中心 > application
 server:
   port: 8082
-  address: 192.168.56.42
+  address: 192.168.1.103
 spring:
   profiles:
     active: dev
   cloud:
     consul:
-      host: 192.168.56.42
+      host: 192.168.1.103
       port: 8500
       discovery:
         health-check-interval: 15s
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/dev?useUnicode=true&characterEncoding=utf8&useSSL=false
+    username: dev
+    password: 123123
 feign:
   httpclient:
     enabled: true
